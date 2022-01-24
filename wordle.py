@@ -289,8 +289,13 @@ if __name__ == "__main__":
     #WordleExperiments().best_starting_word()
     
     # engine = WordleEngine()
-    # engine.run(10, "there", "other")
-    # print(engine.stats())
+    # engine.run(100)
+    # df = engine.stats()
+    # average_tries = df[df["attempts"] != -1]["attempts"].mean()
+    # wins = df[df["attempts"] != -1]["attempts"].size
+    # losses = df[df["attempts"] == -1]["attempts"].size
+    # print(f"avg_tries: {average_tries}, wins: {wins}, losses: {losses}")
+    # print(df)
 
 
 # TODO: spreadsheet of worst and best words for solution and starting
